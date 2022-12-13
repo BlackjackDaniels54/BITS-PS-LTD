@@ -1,0 +1,180 @@
+
+@media (max-width:900px){
+    .our_lawyers h3{
+        font-size: 16px;
+    }
+    .our_lawyers h4{
+        font-size: 14px;
+    }
+    .our_lawyers .info li{
+        font-size: 12px;
+    }
+    .about_us .blocks {
+        display: block;
+    }
+    .locations, .our_firm {
+        margin: 0;
+        max-width: 100%;
+    }
+   
+}
+@media (max-width:767px){
+    .header:before {
+        background-color: #000;
+    }
+    .header_logo {
+        flex: 0 0 40px;
+    }
+    .header_body {
+        justify-content: space-between;
+        height: 50px;
+    }
+    .header_burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;  
+     }
+     .header_burger:active {
+        filter: brightness(0.9);
+        
+    }
+    .header_burger span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: #fff;
+        width: 25px;
+        height: 2px;
+        transform: translate(-50%,-50%);
+        transition: 0.4s;
+    }
+    .header_burger span:nth-of-type(2){
+        top: calc(50% - 7px);
+    }
+    .header_burger span:nth-of-type(3){
+        top: calc(50% + 7px);
+    }
+    .header_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%; 
+        height: 100%;
+        padding: 70px 0 0 0 ;
+        transform: translateX(0);
+        transition: 0.3s;
+    }
+    .header_menu.active {
+        transform: translateX(100%);
+    }
+    .header_list {
+        display: block;
+        position: absolute;
+        right: 0;
+        transform: translateX(0);
+    }
+    .header_list.active {
+        transform: translateX(100%);
+    }
+    .header_list li:nth-child(-n+2){
+        margin: 0;
+        
+    }
+    .header_list li {
+        padding: 10px 30px;
+    }
+    
+    .content {
+        padding: 50px 0 0 0;
+    }
+    .black_bgc {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #000;
+        width: 170px;
+        height: 100%;
+        transform: translateX(0);
+        transition: 0.5s;
+        z-index: -1;
+    }
+    .black_bgc.active {
+        transform: translateX(100%);
+    }
+    .header_link:active{
+        opacity: 0.7;
+    }
+    /*________________________________________________*/
+    ._ibg img {
+        top: 50px;
+    }
+    .main-block_body {
+        padding: 60px 0 0 0;
+    }  
+    /*________________________________________________*/
+    .our_lawyers {
+        margin: 100px 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 20px;
+        justify-content: center;
+        padding: 0 15px;
+    }  
+    .our_lawyers .more_info a{
+        font-size: 15px;
+    }
+    /*________________________________________________*/
+    .services{
+    background-position: right 55% bottom 10%;
+    }
+    .services_text {
+        max-width: 700px;
+        margin: 0 0 70px 0;
+    }
+    .privacy_policy_container {
+        max-width: 1250px;
+        padding: 0 10px;
+    }
+    .right_img {
+        display: none;
+    }
+
+    /*_________________________________________________*/
+    .button_email {
+        position: fixed; 
+        bottom:40px; 
+        right: 20px;
+         z-index: 5;
+    }
+    .email_main {
+        padding: 10px;
+        font-size: 12px;
+        background-color: rgb(135, 235, 235); 
+        color: black;
+        border-radius: 8px;
+        transition: all ease-in-out 0.3s;
+    }
+    .email_main:hover {
+        background-color: #000;
+        color: #fff;
+    }
+    
+}
+@media (max-width:500px){
+    .our_lawyers {
+        margin: 100px 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(1, auto);
+        grid-gap: 20px;
+        justify-content: center;
+        padding: 0 15px;
+    }
+    .Lawyers .partners {
+        padding: 20px 0;
+    }  
+}
+

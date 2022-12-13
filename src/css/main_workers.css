@@ -1,0 +1,142 @@
+/* .main_workers {
+    padding: 0 100px;
+} */
+.main_workers_content {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    max-width: 1000px;
+    padding: 0 10px 0 30px;
+}
+.bgc_img img {
+    position: fixed;
+    width: 35%;
+    height: 100%;
+    object-fit: cover;
+    top: 50px;
+    right: 0;
+    z-index: -1;
+}
+.avatar_img {
+    
+    border-top: 1px solid rgba(0, 0, 0, 0.1) ;
+    padding: 10px 0 0 0;
+    
+}
+.avatar_img img {
+    object-fit: cover;
+}
+.h1 {
+    font-size: 40px;
+    font-weight: 700;
+    border-top: 1px solid rgba(0, 0, 0, 0.1) ;
+    max-width: 150%;
+}
+.h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1) ;
+    padding: 10px 0 0 0;
+}
+.h2 {
+    margin: 8px 0 0 0;
+    color: rgb(153, 153, 153);
+}
+.worker_info .link {
+    margin: 8px 0 0 0;
+}
+.worker_info .link a {
+    color: #000;
+}
+.worker_info .link a:hover {
+    color: rgb(2, 200, 214);
+}
+.worker_info .bio {
+    margin: 10px 0 0 0;
+    line-height: 145%;
+}
+
+.footer {
+    margin-top: 500px;
+}
+
+@media (max-width:1700px) {
+    section .main_workers {
+        max-width: 700px;
+        padding: 0 10px 0 30px;
+        margin: 0 0 170px;
+    } 
+    .bgc_img img {
+        position: fixed;
+        width: 25%;
+        height: 100%;
+        object-fit: cover;
+        top: 50px;
+        right: 0;
+        z-index: -1;
+    }
+  
+}
+@media (max-width:1400px) {
+    section .main_workers_content {
+        max-width: 600px;
+        
+    } 
+    .bgc_img img {
+        position: fixed;
+        width: 35%;
+        height: 100%;
+        object-fit: cover;
+        top: 50px;
+        right: 0;
+        z-index: -1;
+    }
+}
+@media (max-width:1000px){
+    section .main_workers_content {
+        max-width: 450px;
+        
+    } 
+}
+@media (max-width:767px) {
+    section.legal_main {
+        margin: 0;
+    }
+    .bgc_img img {
+        position: static;
+        height: 300px;
+        width: 100%;
+        object-fit: cover;     
+    }
+    section .main_workers_content {
+        padding: 0 10px;
+        margin: 0 0 100px;
+    } 
+    .main_workers_content {
+        display: block;
+    }
+    .avatar_img {
+        border:none;
+    }
+    .footer {
+        margin-top: 150px;
+    }
+    .h1 {
+        font-size: 30px;
+    }
+    .h2 {
+        font-size: 14px
+    }
+    .link {
+        font-size: 14px;
+    }
+    .h3 {
+        font-size: 25px;
+    }
+    .bio {
+        font-size: 14px;
+    }
+} 

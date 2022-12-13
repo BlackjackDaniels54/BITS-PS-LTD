@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Quicksand:wght@300;400;500;600;700&display=swap');
+html,body {
+
+    padding: 0;
+    margin: 0;
+    font-family: Quicksand, sans-serif;
+    scroll-behavior: smooth;
+}
+ul, ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;    
+}
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+.header:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 2;
+}
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+._container {
+    max-width: 1750px;
+    margin: 0 auto;
+}
+.header_body {
+    position: relative;
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+.header_logo {
+    flex: 0 0 60px;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    
+}
+.header_logo img {
+    max-width: 100%;
+    display: block;
+}
+.header_burger {
+    display: none;
+}
+.header_list {
+    display: flex;
+    margin-left: 150px;
+    position: relative;
+    z-index: 2;
+}
+.header_list li:nth-child(-n+2){
+    margin: 0 100px 0 0;
+} 
+.content {
+    padding: 100px 0 0 0;
+}
+
+.header_link { 
+    color: #fff;
+    font-size: 18px;
+} 
+.header_link:hover {
+    color: #fff;
+    opacity: 0.7;
+}
+
+
+/*_________________________Introduction__________________________________________*/
+
+
+.main-block {
+    position: relative;
+}
+
+.main-block_body {
+    padding: 100px 0 0 0;
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+.main-block_container {
+    padding: 0 15px;
+}
+
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 80px;
+    left: 0;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.main-block_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+.main-block_text,.main-block_title {
+    color: #fff;
+    
+}
+.main-block_title{
+    font-weight: 300;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+.main-block_text:nth-of-type(2) {
+    margin: 20px 0 120px 0;
+}
+.main-block_text {
+    line-height: 170%;
+    font-weight: 300;
+    font-size: 18px;
+}
+.button_link {
+    position: relative;
+    z-index: 5;
+    width: 120px;
+    margin: 0 auto;
+    text-align: center;
+}
+.button_link:hover div {
+    color: skyblue;
+    cursor: pointer;
+}
+.button_link div {
+    color: #fff;
+}
+.button_link .text {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.fa-solid {
+    font-size: 25px;
+}
+.button_email {
+    position: fixed; 
+    bottom:50px; 
+    right: 40px;
+     z-index: 5;
+}
+.email_main {
+    padding: 15px;
+    background-color: rgb(135, 235, 235); 
+    color: black;
+    border-radius: 8px;
+    transition: all ease-in-out 0.3s;
+}
+.email_main:hover {
+    background-color: #000;
+    color: #fff;
+}
+/*_______________________Candidate____________________________*/
+
+
+div .container_can {
+    max-width: 300px;
+    margin: 0 auto;
+    
+
+}
+div.candidate {
+    background-color: #fff;
+    border-radius:5px ;
+    position: relative;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+div.candidate:hover {
+   transform: translateY(-10px);
+   
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
+}
+.candidate h3{
+    color: black;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 5px 0 0 10px;
+}
+.candidate h4 {
+    color: gray;
+    margin: 0;
+    padding: 5px 0 15px 10px;
+    font-weight: 300;
+}
+.law_container{
+    max-width: 1400px;
+    margin: 0 auto;
+    
+}
+.our_lawyers {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px 40px;
+    padding: 50px 15px;
+}
+.Lawyers .partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.Lawyers .partners .main {
+    color: black;
+    transition: all ease-in-out 0.2s;
+}
+.Lawyers .partners .main:hover {
+    
+    color: skyblue;
+    transform: translateX(10px);
+    
+}
+.fa-arrow-right-long {
+    font-size: 60px;
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+    
+}
+.avatar img {
+    width: 100%;
+    border-radius: 5px 5px 0  0;
+}
+.more_info{
+    display: flex;
+    justify-content: center;
+    margin: 15px ;
+}
+.more_info a {
+    padding: 5px 7px;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    background-color: white;
+   
+    color: #000;
+    transition: 0.1s;
+    cursor: pointer;
+    font-size: 16px;
+}
+.more_info a:hover {
+    background-color: #000;
+    color: white;
+}
+.info > li {
+    line-height: 20px;
+    font-size: 14px;
+    padding: 0 10px ;
+}
+.info li a {
+    color: #000;
+}
+.info li a:hover {
+    color: rgb(5, 238, 255);
+}
+.info li b {
+    font-size: 16px;
+    margin: 0 5px 0 0;
+}
+.gray .text {
+    color: rgb(104, 103, 103);
+    font-weight: 500;
+}
+
+
+/*__________________________________Services_____________________________*/
+
+.services { 
+    background: linear-gradient(  rgba(0, 0, 0, 0.7) , rgba(0, 0, 0, 0.4)  ),url(../img/bitcoin.jpg);
+    height: 100%;
+    background-size: cover;   
+    background-position:  center;
+}
+._container {
+    padding: 0 15px;
+}
+.services_titleH1{  
+    font-weight: 400;
+    font-size: 35px;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+.services_titleH2{
+    padding: 25px 0 20px 0;
+    font-weight: 300;
+    margin: 0;
+    font-size: 22px;
+}
+.services_titleH2,.services_titleH1,.services_text {
+    color: #fff;
+}
+.services_text {
+    max-width: 700px;
+    margin: 0 0 150px 0;
+}
+.services_text p {
+    margin: 0 0 30px 0;
+    line-height: 160%;
+}
+.services_text p a {
+    color: skyblue;
+    font-weight: 500;
+}
+.services_text p a:hover{
+    color: #fff;
+}
+
+/*________________________________________About US____________________________________*/
+
+ .about_us .blocks {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1050px ;
+}
+.about_us h3 {
+    padding: 20px 0 5px 0;
+    margin: 0;
+    font-weight: 500;
+}
+.about_us h4 {
+    margin: 0;
+    font-weight: 100;
+}
+.about_us {
+    background-color: #000;
+    padding: 1px 0 100px 0;
+}
+.about_us .mini_title {
+    padding: 0;
+}
+.white {
+    color: #fff;
+}
+
+.about_us_title_h2 {
+    font-weight: 300;
+}
+.about_us_title_h1 {
+    font-weight: 400;
+}
+.about_us_text {
+    line-height: 160%;
+}
+.about_us_text {
+    max-width: 600px;
+}
+.our_firm, .locations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted skyblue;
+    width: 500px;
+    padding: 0 0 10px 0;
+}
+.our_firm:hover h3, .locations:hover h3 {
+    color: skyblue;
+    cursor: pointer;
+}
+.fa-angle-right {
+    color: #fff;
+    margin: 30px 0 0 0;
+    font-size: 18px;
+}
+.locations {
+    margin: 0 0 0 20px;
+} 
+
+
+/*_________________________________FOOTER____________________________________*/
+.footer {
+    background-color: #000;
+    padding: 20px 0;
+}
+.footer_info, .footer_links a {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+}
+.footer_links a:hover {
+    color: skyblue;
+}
+.footer_links {
+    margin: 0 0 5px 0;
+}
+.footer .legal {
+  border-right: 1px solid #fff;
+  padding: 0 12px 0 0;
+}
+.privacy_policy {
+    padding: 0 0 0 8px;
+} 
